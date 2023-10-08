@@ -1,9 +1,22 @@
 /*  your css code here. If applicable */
 #grid{
-  display: grid;
-  gap: 5px;
-  background-color:white;
+	display:grid;
+	height:100vh;
+	grid-template-columns:242.5px 242.5px 242.5px 242.5px 242.5px;
+	grid-template-rows:124px 124px 124px 124px 124px;
+	grid-template-areas:
+		"item1 item1 item1 item1"
+	"item2 item3 item4 item4"
+	"item2 item5 item5 item6"
+	"item2 item7 item8 item9"
+	"item2 item10 item10 item10";
+	grid-gap:10px 10px;
+}
+.item{
+	background-color:green;
 	color:white;
+	font-size:30px;
+	padding:10px;
 }
 .item1 {
 	background-color:green;
